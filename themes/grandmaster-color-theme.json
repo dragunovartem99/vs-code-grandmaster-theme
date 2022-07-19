@@ -14,6 +14,12 @@
     "button.background": "#FFBC47",
     "button.foreground": "#111",
 
+    // Lists
+    "list.activeSelectionBackground": "#FFBC47",
+    "list.activeSelectionForeground": "#111",
+    "list.activeSelectionIconForeground": "#111",
+    "list.errorForeground": "#E75454",
+
     // Activity bar
     "activityBar.background": "#111",
     "sideBarSectionHeader.background": "#111",
@@ -21,6 +27,9 @@
 
     // Side bar
     "sideBar.background": "#111",
+
+    // Minimap
+    "minimap.errorHighlight": "#E75454",
 
     // Tabs
     "editorGroupHeader.tabsBackground": "#111",
@@ -32,6 +41,7 @@
     "editor.foreground": "#AAA",
     "editorCursor.foreground": "#FFBC47",
     "editor.selectionBackground": "#FFFFFF33",
+    "editorError.foreground": "#E75454",
 
     // Status bar
     "statusBar.background": "#111",
@@ -77,42 +87,18 @@
     },
 
     {
-      "name": "Functions",
-      "scope": ["entity.name.function"],
+      "name": "Template expression dollar",
+      "scope": ["punctuation.definition.template-expression"],
       "settings": {
         "foreground": "#FFBC47"
       }
     },
 
     {
-      "name": "Variables",
-      "scope": ["variable.other.constant"],
+      "name": "Functions",
+      "scope": ["entity.name.function"],
       "settings": {
-        "foreground": "#FFF"
-      }
-    },
-
-    {
-      "name": "Readwrite",
-      "scope": ["variable.other.readwrite"],
-      "settings": {
-        "foreground": "#FFF"
-      }
-    },
-
-    {
-      "name": "Return",
-      "scope": ["keyword.control.flow"],
-      "settings": {
-        "foreground": "#E68046"
-      }
-    },
-
-    {
-      "name": "Property",
-      "scope": ["variable.other.property"],
-      "settings": {
-        "foreground": "#F7D59B"
+        "foreground": "#FFBC47"
       }
     },
 
@@ -124,11 +110,53 @@
       }
     },
 
+    {
+      "name": "Return Keyword",
+      "scope": ["keyword.control.flow"],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#DDD"
+      }
+    },
+
+    {
+      "name": "This Keyword",
+      "scope": ["variable.language.this"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#E68046"
+      }
+    },
+
+    {
+      "name": "Variables",
+      "scope": ["variable.other.constant", "variable.other.readwrite"],
+      "settings": {
+        "foreground": "#FFF"
+      }
+    },
+
+    {
+      "name": "Variable parameter",
+      "scope": ["variable.parameter"],
+      "settings": {
+        "foreground": "#F7D59B"
+      }
+    },
+
+    {
+      "name": "Prop, method",
+      "scope": ["variable.other.property"],
+      "settings": {
+        "foreground": "#CCC"
+      }
+    },
+
     // HTML
 
     {
       "name": "Tag names",
-      "scope": ["entity.name.tag"],
+      "scope": ["entity.name.tag", "support.class.component"],
       "settings": {
         "foreground": "#7A7A7A"
       }
@@ -143,6 +171,7 @@
     },
 
     // CSS
+
     {
       "name": "CSS Keywords",
       "scope": ["support.constant.property-value.css"],
@@ -161,7 +190,7 @@
     },
 
     {
-      "name": "CSS Numbers",
+      "name": "CSS Functions",
       "scope": ["support.function.misc"],
       "settings": {
         "foreground": "#F7D59B"
@@ -169,7 +198,7 @@
     },
 
     {
-      "name": "CSS Class",
+      "name": "CSS and SCSS Classes",
       "scope": [
         "entity.other.attribute-name.class.css",
         "punctuation.definition.entity.css",
