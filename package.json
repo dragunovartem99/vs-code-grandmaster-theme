@@ -1,0 +1,21 @@
+{
+    "name": "grandmaster",
+    "displayName": "grandmaster",
+    "description": "minimal personal custom theme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.69.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "grandmaster",
+                "uiTheme": "vs-dark",
+                "path": "./themes/grandmaster-color-theme.json"
+            }
+        ]
+    }
+}
