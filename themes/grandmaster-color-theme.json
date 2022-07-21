@@ -14,11 +14,14 @@
     "button.background": "#FFBC47",
     "button.foreground": "#111",
 
+    // Progress bar
+    "progressBar.background": "#FFBC47",
+
     // Lists
-    "list.activeSelectionBackground": "#FFBC47",
-    "list.activeSelectionForeground": "#111",
+    "list.activeSelectionBackground": "#4A4A4A",
     "list.activeSelectionIconForeground": "#111",
     "list.errorForeground": "#E75454",
+    "list.highlightForeground": "#FFBC47",
 
     // Activity bar
     "activityBar.background": "#111",
@@ -45,7 +48,9 @@
 
     // Status bar
     "statusBar.background": "#111",
-    "statusBar.foreground": "#999"
+    "statusBar.foreground": "#999",
+    "statusBar.debuggingBackground": "#FFBC47",
+    "statusBar.debuggingForeground": "#111"
   },
   "tokenColors": [
     {
